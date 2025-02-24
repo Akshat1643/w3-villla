@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+  ::-webkit-scrollbar { 
+    display: none;
+  }
+  
 .villa-wrapper{
     width: 90%;
     margin: 0 auto;
@@ -44,8 +48,8 @@
 /* -best-appartment */
 .best-apartment{
   width: 100%;
-  height:38vmax;
-  background-color: rgb(246, 128, 128);
+  min-height:38vmax;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,8 +116,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding-left: 2rem;
-  
+  padding-left: 2rem; 
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
 }
 .ba-right-logo{
   color: #F35424;
@@ -141,4 +145,200 @@
   color: #a39f9f;
 
 }
+.ba-middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ba-middle-top{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
+}
+.ba-middle-main-heading{
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.ba-middle-bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-wrap: wrap;
+}
+.featured{
+  font-size: 1.5rem;
+  color: #ED626A;
+  display: flex;
+  align-items: center;
+}
+/* -- vedio-view-- */
+
+.bottom-btn{
+  display: flex;
+  gap:1rem;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #FFEEE9;
+  padding: 15px 40px;
+  border-radius: 10px;
+
+}
+.bottom-btn-no{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #F35424;
+}
+.bottom-btn-para{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.bottom-btn-para span{
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-width-section {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.top-half, .bottom-half {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-half img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .6;
+}
+
+.bottom-half {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space between boxes */
+  align-items: flex-end;
+  background-color: white;
+  padding: 0 13%;
+  padding-bottom: 4%;
+  /* Ensures bottom boxes align with center box */
+}
+
+.bottom-box {
+  width: 30%; /* Ensures total width matches center box */
+  height: 30%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Center Box */
+.center-box {
+  width: 70%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.center-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the whole div */
+  position: absolute;
+  ;
+}
+.top-half{
+  position: relative;
+}
+.top-half-content{
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vedio-view{
+  font-size: 1rem;
+}
+.closer-view{
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+.top
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .bottom-half {
+      padding: 0 10%; /* Reduce padding on smaller screens */
+  }
+
+  .bottom-box {
+      width: 32%; /* Slightly wider to match spacing */
+      height: 50%;
+  }
+
+  .center-box {
+      width: 80%; 
+      height: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-half {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0;
+  }
+
+  .bottom-box {
+      width: 70%; /* Stack boxes vertically */
+      height: 30%;
+  }
+
+  .center-box {
+      width: 90%;
+      height: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-box {
+      width: 80%; 
+      height: 25%;
+  }
+
+  .center-box {
+      width: 95%;
+      height: 35%;
+  }
+}
