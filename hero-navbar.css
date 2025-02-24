@@ -1,0 +1,42 @@
+.hero-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.options{
+    list-style-type: none;
+    display: flex;
+    gap: 5rem;
+}
+.hero-heading{
+    font-size: 1.9vmax;
+    font-weight: 600;
+}
+.options li {
+    font-size: 1.2rem;
+    
+}
+.options i{
+
+    padding: .4rem;
+    background-color: #ec1313;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+.options span{
+    font-size: 1rem;
+    background-color: #1E1E1E;
+    border: none;
+    padding: .5rem;
+    border-radius: 20px;
+    padding-right: 1rem;
+ 
+}
+.visit button{
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 20px;
+}
