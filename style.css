@@ -12,7 +12,7 @@
 .hero-banner-container{
   width: 100%;
   height: 90vh;
-  position: absolute;
+  position: relative;
 }
 .hero-banner-container img{
   height: 100%;
@@ -41,3 +41,104 @@
   color: white;
 
 }
+/* -best-appartment */
+.best-apartment{
+  width: 100%;
+  height:38vmax;
+  background-color: rgb(246, 128, 128);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .best-apartment-container{
+  width: 88%;
+  /* height: 80%; 
+  background-color: black;
+  display: grid;
+  grid-template-columns: (1fr,2fr,1fr);
+  grid-column-gap: .5rem;
+
+}
+.ba-left{
+  background-color: aqua;
+}
+.ba-middle{
+  background-color: blue;
+}
+.ba-right{
+  background-color: blueviolet;
+} */
+.best-apartment-container {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Three columns: 1fr, 2fr, 1fr */
+  gap: 20px; /* Adds space between columns */
+  padding: 2.5rem;
+  
+}
+
+.ba-left, .ba-middle, .ba-right {
+  background-color: #f3f3f3; /* Light background for visualization */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+.ba-left img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.ba-left{
+  position: relative;
+}
+.paper-logo{
+  position: absolute;
+  bottom: -14%;
+  left: -14%;
+  color: #f9e8e3;
+  background-color: #F35424;
+  font-size: 4.2vmax;
+  border-radius: 50%;
+  padding: 1vmax;
+  display: flex;
+  align-items: center;
+  
+}
+.ba-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 2rem;
+  
+}
+.ba-right-logo{
+  color: #F35424;
+  font-size: 3.2vmax;
+ 
+}
+.ba-right-a{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: .5px solid rgb(198, 197, 197);
+  width: 85%;
+}
+.ba-right-a div {
+  display: flex;
+  flex-direction: column;
+}
+.ba-right-main{
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
+.ba-right-sub{
+  font-size: 1rem;
+  color: #a39f9f;
+
+}
+
